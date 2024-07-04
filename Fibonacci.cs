@@ -31,8 +31,20 @@ namespace Fibonacci
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
 
-            int n = int.Parse(req.Query["number"]);
+            if (!(int.TryParse((string)req.Query["number"], out int n) && n > 0))
+            {
+                new BadRequestObjectResult("Please enter positive integer");
+            }
 
+            var number = CalculateNumber(n);
+
+            _logger.LogInformation($"Calculated value is {number}");
+
+            return new OkObjectResult(number);
+        }
+
+        private int CalculateNumber( int n )
+        {
             int number = n;
             int[] Fib = new int[number + 1];
             Fib[0] = 0;
@@ -42,9 +54,7 @@ namespace Fibonacci
                 Fib[i] = Fib[i - 2] + Fib[i - 1];
             }
 
-            _logger.LogInformation($"Calculated value is {Fib[number]}");
-
-            return new OkObjectResult(Fib[number]);
-        }
+            return Fib[number];
+        } 
     }
 }
