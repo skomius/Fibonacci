@@ -14,10 +14,10 @@ For CI/CD are used github actions. Pipeline code can be found workflow folder an
 - Deploy resources to azure cloud using arm templates
 - Run azure function with latest image
   
-There will three environments: staging, test and production. Each will have its own CI/CD pipelines and container image repository, secret stores. Staging pipeline will be auto triggered by the push to staging branch. Testing pipeline will triggered manually. Production pipeline will be trigger only by push to main branch
+There will three environments: staging, test and production. Each will have its own CI/CD pipeline and container image repository, secrets store. Staging pipeline will be auto triggered by the push to staging branch. Testing pipeline will triggered manually. Production pipeline will be trigger only by push to main branch
 
 # Logging
-For logging are used azure application insight. It is included in azure ARM deployment script in Iac folder.
+For logging are used azure application insights. It is included in azure ARM deployment script in Iac folder.
 
 # Scaling
 Azure functions in container can be scaled up to 1000 instances as long as there's enough cores quota available. It is event driven and scale out automatically, even during periods of high load. Azure Functions infrastructure scales CPU and memory resources by adding more instances of the Functions host, based on the number of events that its functions are triggered usually it a concurrent request. Scaling could be configured with iac.
