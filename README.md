@@ -6,7 +6,7 @@ This is single endpoint and probably will not be used continuously so its endpoi
 2. Navigate to object root
 3. run 'docker build -t {tag} .'
 4. run 'docker run -it -p {port}:80 {tag}'
-5. try out using swagger 'http://localhost:{port}/api/swagger/ui or endpoint 'http://localhost:{port}/api/Fibonacci?number={number}'
+5. try out using swagger http://localhost:{port}/api/swagger/ui or endpoint http://localhost:{port}/api/Fibonacci?number={number}
     
 # CI/CD 
 For CI/CD are used github actions. Pipeline code can be found workflow folder and infrastructure as a code in Iac folder. The main steps:
