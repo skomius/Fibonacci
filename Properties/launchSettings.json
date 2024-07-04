@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Fibonacci": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7257"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 30618,
+      "useSSL": false
+    }
+  }
+}
