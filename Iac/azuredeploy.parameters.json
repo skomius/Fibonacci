@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "subscriptionId": {
+      "value": "22c39b51-f6d0-456b-a8f6-d8f757db11dc"
+    },
+    "name": {
+      "value": "testfunction-0001"
+    },
+    "location": {
+      "value": "East US"
+    },
+    "ftpsState": {
+      "value": "FtpsOnly"
+    },
+    "storageAccountName": {
+      "value": "testgroup8a4f"
+    },
+    "use32BitWorkerProcess": {
+      "value": false
+    },
+    "linuxFxVersion": {
+      "value": "DOCKER|mcr.microsoft.com/azure-functions/dotnet8-quickstart-demo:1.0"
+    },
+    "environmentName": {
+      "value": "managedEnvironment-TestGroup-b92f"
+    },
+    "workspaceName": {
+      "value": "workspacetestgroup8068"
+    },
+    "workspaceLocation": {
+      "value": "eastus"
+    },
+    "managedEnvironmentId": {
+      "value": "/subscriptions/22c39b51-f6d0-456b-a8f6-d8f757db11dc/resourceGroups/TestGroup/providers/Microsoft.App/managedEnvironments/managedEnvironment-TestGroup-b92f"
+    },
+    "workloadProfileName": {
+      "value": "Consumption"
+    },
+    "resourceConfig": {
+      "value": {
+        "cpu": "1",
+        "memory": "2Gi"
+      }
+    }
+  }
+}
