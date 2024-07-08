@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "subscriptionId": {
-      "value": "22c39b51-f6d0-456b-a8f6-d8f757db11dc"
+      "value": ""
     },
     "name": {
       "value": "testfunction-0001"
@@ -33,7 +33,7 @@
       "value": "eastus"
     },
     "managedEnvironmentId": {
-      "value": "/subscriptions/22c39b51-f6d0-456b-a8f6-d8f757db11dc/resourceGroups/TestGroup/providers/Microsoft.App/managedEnvironments/managedEnvironment-TestGroup-b92f"
+      "value": ""
     },
     "workloadProfileName": {
       "value": "Consumption"
